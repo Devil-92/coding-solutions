@@ -1,3 +1,19 @@
+/*
+Platform: InterviewBit
+Problem: Powerful Divisors
+Topic: Math, Sieve
+Difficulty: Medium
+Link: https://www.interviewbit.com/problems/powerful-divisors/
+
+Approach:
+- Count divisors for every number using modified sieve
+- Check if divisor count is power of 2 ( x & (x-1) )
+- Prefix sum preprocessing
+
+Time Complexity: O(n log n)
+Space Complexity: O(n)
+*/
+
 vector<int> Solution::powerfulDivisors(vector<int> &A) {
     int maxm = A[0] ;
     for(auto i : A)
